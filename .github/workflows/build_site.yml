@@ -11,3 +11,5 @@ jobs:
       - name: npm install and build webpack
         run: |
           npm install
+          echo "Run Build..."
+          npm run build
