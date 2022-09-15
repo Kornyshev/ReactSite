@@ -18,6 +18,7 @@ jobs:
         with:
           source_file: 'ReactSiteProdBuild'
           destination_repo: 'Kornyshev/ReactSiteProdBuild'
+          destination_branch: master
           user_email: 'chronomailast@gmail.com'
           user_name: 'Evgeniy Kornyshev'
           commit_message: 'Release commit and push'
