@@ -6,7 +6,7 @@ cd prod/
 git init
 git config --global user.email "you@example.com"
 git config --global user.name "GitHub Action"
-git remote add origin git@github.com:Kornyshev/ReactSiteProdBuild.git
+git remote add origin https://github.com/Kornyshev/ReactSiteProdBuild.git
 echo "=========================="
 
 git pull origin master
@@ -26,5 +26,5 @@ ls -la
 echo "=========================="
 
 echo "Push"
-git push -u origin
+git push -u origin master
 echo "=========================="
