@@ -9,16 +9,21 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       
-      - name: Trigger Bash script
-        run: bash prod-push-script.sh
-      - name: Pushes ReactSiteProdBuild dir
-        uses: dmnemec/copy_file_to_another_repo_action@main
+      - name: Push to Prod repo
         env:
-          API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
-        with:
-          source_file: 'ReactSiteProdBuild'
-          destination_repo: 'Kornyshev/ReactSiteProdBuild'
-          destination_branch: master
-          user_email: 'chronomailast@gmail.com'
-          user_name: 'Evgeniy Kornyshev'
-          commit_message: 'Release commit and push'
+          GITHUB_TOKEN: ${{ secrets.API_TOKEN_GITHUB }}
+        run: |
+          git config --global user.email "you@example.com"
+          git config --global user.name "GitHub Action"
+          git config --unset-all http.https://github.com/.extraheader
+          cd ..
+          ls -la
+          git clone https://user:$API_TOKEN_GITHUB@github.com/Kornyshev/ReactSiteProdBuild
+          cd ReactSiteProdBuild/
+          ls -la
+          cp -r -f ../ReactSite/build/* .
+          git remote -v
+          git status
+          git add .
+          git commit -am "Release commit"
+          git push -u origin master
