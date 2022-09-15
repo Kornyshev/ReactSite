@@ -18,7 +18,7 @@ jobs:
           pwd
           ls -la
           git clone https://github.com/Kornyshev/ReactSiteProdBuild.git
-          ls-la
+          ls -la
           cd ReactSiteProdBuild/
           pwd
           ls -la
