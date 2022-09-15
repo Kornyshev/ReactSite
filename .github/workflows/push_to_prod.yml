@@ -8,10 +8,16 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+      
       - name: Trigger Bash script
-        run: |
-          ls -la
-          bash prod-push-script.sh
-          ls -la
-          cd prod/
-          ls -la
+        run: bash prod-push-script.sh
+      - name: Pushes ReactSiteProdBuild dir
+        uses: dmnemec/copy_file_to_another_repo_action@main
+        env:
+          API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
+        with:
+          source_file: 'ReactSiteProdBuild'
+          destination_repo: 'Kornyshev/ReactSiteProdBuild'
+          user_email: 'chronomailast@gmail.com'
+          user_name: 'Evgeniy Kornyshev'
+          commit_message: 'Release commit and push'
