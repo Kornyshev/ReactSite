@@ -18,7 +18,7 @@ git config --global user.email "you@example.com"
 git config --global user.name "GitHub Action"
 
 echo "Add remoter repo and pull"
-git remote add origin https://github.com/Kornyshev/ReactSiteProdBuild.git
+git remote add origin http://github.com/Kornyshev/ReactSiteProdBuild.git
 git pull origin master
 ls -la
 echo "=========================="
