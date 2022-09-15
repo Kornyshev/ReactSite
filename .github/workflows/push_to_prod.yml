@@ -13,10 +13,14 @@ jobs:
         run: |
           git config --global user.email "you@example.com"
           git config --global user.name "GitHub Action"
+          pwd
           cd ..
+          pwd
           ls -la
           git clone https://github.com/Kornyshev/ReactSiteProdBuild.git
+          ls-la
           cd ReactSiteProdBuild/
+          pwd
           ls -la
           echo "Some line" > file1.txt
           pwd
