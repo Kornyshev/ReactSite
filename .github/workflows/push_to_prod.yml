@@ -10,20 +10,17 @@ jobs:
       - uses: actions/checkout@v3
       
       - name: Push to Prod repo
-        env:
-          GITHUB_TOKEN: ${{ secrets.API_TOKEN_GITHUB }}
         run: |
           git config --global user.email "you@example.com"
           git config --global user.name "GitHub Action"
-          git config --unset-all http.https://github.com/.extraheader
           cd ..
           ls -la
           git clone https://github.com/Kornyshev/ReactSiteProdBuild.git
           cd ReactSiteProdBuild/
           ls -la
-          cp -r -f ../ReactSite/build/* .
+          cp -r -f -v ../ReactSite/build/* .
           git remote -v
           git status
           git add .
           git commit -am "Release commit"
-          git push -u origin master
+          git push
