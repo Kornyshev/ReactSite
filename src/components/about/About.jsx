@@ -39,7 +39,7 @@ const About = () => {
 
           </div>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce accumsan cursus lorem. Proin mi libero, mattis in ultrices ut, ornare et mauris. Sed tempus, enim eu condimentum convallis.
+            Здесь будет краткое описание меня, как специалиста. С акцентом на сильные стороны, основные скилы, пройденные проекты.
           </p>
           <a href="#contact" className='btn btn-primary'>Let's Talk</a>
         </div>
