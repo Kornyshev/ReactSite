@@ -19,6 +19,7 @@ jobs:
           cd ReactSiteProdBuild/
           ls -la
           echo "Some line" > file1.txt
+          pwd
           git remote -v
           git status
           git add .
