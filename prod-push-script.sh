@@ -3,14 +3,10 @@
 echo "Creating dir and initializing Git repo"
 mkdir prod
 cd prod/
-git init
+git clone https://github.com/Kornyshev/ReactSiteProdBuild.git
 git config --global user.email "you@example.com"
 git config --global user.name "GitHub Action"
-git remote add origin https://github.com/Kornyshev/ReactSiteProdBuild.git
-echo "=========================="
-
-git pull origin master
-echo "Pulled repository:"
+echo "Cloned repository:"
 ls -la
 echo "=========================="
 
@@ -19,9 +15,8 @@ cp -r -f ../build/* .
 echo "=========================="
 
 echo "Commit"
-git branch --set-upstream-to=origin/master master
 git add .
-git commit -m "Release commit"
+git commit -am "Release commit"
 ls -la
 echo "=========================="
 
