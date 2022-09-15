@@ -1,0 +1,13 @@
+name: Push my React site to Prod repo
+on:
+  push:
+    branches: ['master']
+
+jobs:
+  run-push-script:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Trigger Bash script
+        run: |
+          ls -la
