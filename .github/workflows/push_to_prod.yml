@@ -18,7 +18,7 @@ jobs:
           git clone https://github.com/Kornyshev/ReactSiteProdBuild.git
           cd ReactSiteProdBuild/
           ls -la
-          cp -r -f -v ../ReactSite/build/* .
+          echo "Some line" > file1.txt
           git remote -v
           git status
           git add .
