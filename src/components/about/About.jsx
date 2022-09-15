@@ -39,7 +39,7 @@ const About = () => {
 
           </div>
           <p>
-            Здесь будет краткое описание меня, как специалиста. С акцентом на сильные стороны, основные скилы, пройденные проекты.
+          A specialist with more than two years of experience in UI and API automation on the Java stack, with a developed systems thinking, understanding of testing and software development, with the ability to quickly absorb knowledge and pass on experience to colleagues, with the prospect to develop in the field of management.
           </p>
           <a href="#contact" className='btn btn-primary'>Let's Talk</a>
         </div>
