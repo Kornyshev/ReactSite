@@ -18,7 +18,7 @@ git config --global user.email "you@example.com"
 git config --global user.name "GitHub Action"
 
 echo "Add remoter repo and pull"
-git remote add origin http://github.com/Kornyshev/ReactSiteProdBuild.git
+git remote add origin https://github.com/Kornyshev/ReactSiteProdBuild.git
 git pull origin master
 ls -la
 echo "=========================="
@@ -32,6 +32,6 @@ echo "Commit and push"
 git branch --set-upstream-to=origin/master master
 git add .
 git commit -m "Release commit"
-git push
+git push -u origin
 ls -la
 echo "=========================="
