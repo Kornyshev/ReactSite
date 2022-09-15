@@ -18,7 +18,7 @@ jobs:
           git config --unset-all http.https://github.com/.extraheader
           cd ..
           ls -la
-          git clone https://user:$API_TOKEN_GITHUB@github.com/Kornyshev/ReactSiteProdBuild
+          git clone https://github.com/Kornyshev/ReactSiteProdBuild.git
           cd ReactSiteProdBuild/
           ls -la
           cp -r -f ../ReactSite/build/* .
