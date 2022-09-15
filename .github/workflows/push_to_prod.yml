@@ -11,7 +11,7 @@ jobs:
       - name: Trigger Bash script
         run: |
           ls -la
-          prod-push-script.sh
+          bash prod-push-script.sh
           ls -la
           cd prod/
           ls -la
