@@ -14,4 +14,3 @@ cp -r -f ../ReactSite/build/* .
 git status
 git add .
 git commit -am "Release commit"
-git push
