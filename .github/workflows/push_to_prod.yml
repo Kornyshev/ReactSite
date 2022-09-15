@@ -28,4 +28,15 @@ jobs:
           git status
           git add .
           git commit -am "Release commit"
-          git push
+         
+      - name: Pushes directory
+        uses: dmnemec/copy_file_to_another_repo_action@main
+        env:
+          API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
+        with:
+          source_file: '/home/runner/work/ReactSite/ReactSiteProdBuild/'
+          destination_repo: 'Kornyshev/ReactSiteProdBuild'
+          destination_branch: master
+          user_email: 'chronomailast@gmail.com'
+          user_name: 'Evgeniy Kornyshev'
+          commit_message: 'A custom message for the commit'
