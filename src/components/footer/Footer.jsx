@@ -1,7 +1,7 @@
 import React from 'react'
-import {FaFacebookF} from 'react-icons/fa'
-import {FiInstagram} from 'react-icons/fi'
-import {IoLogoTwitter} from 'react-icons/io'
+import {AiFillGithub} from 'react-icons/ai'
+import {AiFillLinkedin} from 'react-icons/ai'
+import {BsTelegram} from 'react-icons/bs'
 import './footer.css'
 
 const Footer = () => {
@@ -17,9 +17,9 @@ const Footer = () => {
       </ul>
 
       <div className="footer__socials">
-        <a href="https://facebook.com"><FaFacebookF/></a>
-        <a href="https://instagram.com"><FiInstagram/></a>
-        <a href="https://twitter.com"><IoLogoTwitter/></a>
+        <a target="_blank" href="https://github.com/Kornyshev"><AiFillGithub/></a>
+        <a target="_blank" href="https://www.linkedin.com/in/kornyshev/"><AiFillLinkedin/></a>
+        <a target="_blank" href="https://telegram.me/kornyshev_e"><BsTelegram/></a>
       </div>
 
       <div className="footer__copyright">
