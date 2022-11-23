@@ -41,6 +41,9 @@ const About = () => {
           <p>
           Specialist with more than two years experience in UI and API automation on Java stack. I have skills in Java programming, building test automation on the project and integrating it into the development process. High level of responsibility and system thinking allows me to lead a team, set up processes and improve performance of the whole project.
           </p>
+          <p>
+          I am also actively involved in the training of future professionals both within the company where I work now, and outside of it.
+          </p>
           <a href="#contact" className='btn btn-primary'>Let's Talk</a>
         </div>
       </div>
